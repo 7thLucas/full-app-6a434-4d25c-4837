@@ -24,7 +24,7 @@ purchase.
 4. Each option also displays the **aircraft model** and the **onboard services / entertainment**
    for that specific plane, so comfort and amenities factor into the decision — not price alone.
 5. The app surfaces a single **best-decision recommendation** plus the comparison behind it.
-5. The traveler is redirected to the chosen site to book.
+6. The traveler is redirected to the chosen site to book.
 
 ## Scope
 
