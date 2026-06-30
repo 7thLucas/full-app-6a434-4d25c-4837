@@ -1,0 +1,40 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <style>
+    .mode-landscape .sl-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: stretch; }
+    .mode-portrait .sl-grid { display: flex; flex-direction: column; }
+    .mode-portrait .sl-visual { min-height: 240px; }
+  </style>
+
+  <div class="sl-grid w-full h-full">
+    <!-- Left: editorial headline -->
+    <div class="flex flex-col justify-between p-12">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold tracking-wide text-sky-700 ring-1 ring-sky-200">
+          INDONESIA FLIGHTS · DECISION ENGINE
+        </div>
+        <h1 class="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-slate-900">
+          Stop comparing tabs.<br>
+          <span class="text-sky-600">Get the answer.</span>
+        </h1>
+        <p class="mt-6 max-w-md text-lg leading-relaxed text-slate-600">
+          One trusted "buy here" call for flights to and from Indonesia — we compare the booking
+          sites, you book the best one.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cinematic%20aerial%20view%20of%20an%20airplane%20wing%20over%20the%20Indonesian%20archipelago%20at%20golden%20hour%2C%20tropical%20islands%20and%20turquoise%20sea%20below%2C%20warm%20premium%20editorial%20photography"
+        alt="Flight over the Indonesian archipelago"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+    </div>
+  </div>
+</section>
