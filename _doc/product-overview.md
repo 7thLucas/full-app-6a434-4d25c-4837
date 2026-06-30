@@ -15,7 +15,8 @@ purchase.
 
 ## The core workflow
 
-1. Traveler enters a route (origin → destination) and date for an Indonesian flight, and
+1. Traveler enters a route (origin → destination) and date for a flight anywhere across Asia
+   or nearby destinations, and
    chooses a **flight type — direct, transit (connecting), or both**.
 2. The app gathers comparable fares for that route from several booking sources, including
    transit (connecting) itineraries, which are often cheaper than direct flights.
