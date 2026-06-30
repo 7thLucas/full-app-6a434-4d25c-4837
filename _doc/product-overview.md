@@ -21,7 +21,9 @@ purchase.
 3. The app compares price (and supporting factors such as refund/change terms and direct vs.
    transit where available) and ranks the options, flagging when a transit option saves real
    money over flying direct.
-4. The app surfaces a single **best-decision recommendation** plus the comparison behind it.
+4. Each option also displays the **aircraft model** and the **onboard services / entertainment**
+   for that specific plane, so comfort and amenities factor into the decision — not price alone.
+5. The app surfaces a single **best-decision recommendation** plus the comparison behind it.
 5. The traveler is redirected to the chosen site to book.
 
 ## Scope
