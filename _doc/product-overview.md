@@ -5,7 +5,8 @@
 
 ## What it is
 
-**Terbangin** — a flight **decision engine** for Indonesian travel — a web app that compares fares for the
+**Terbangin** — a flight **decision engine** for travel across Asia and nearby destinations — a web app
+that compares fares for the
 same route across multiple booking sites and tells the traveler the single best place to
 buy. It is not just a meta-search that lists options and links out; the differentiating
 value is the **recommendation**: "buy this flight on Site X — it's cheaper and the terms are
