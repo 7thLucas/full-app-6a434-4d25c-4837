@@ -42,7 +42,9 @@ purchase.
 
 ## Who it's for
 
-Price-sensitive Indonesian travelers (and people flying to/from Indonesia) who currently
+Price-sensitive travelers flying across Asia and to nearby destinations — anchored in
+Indonesian travelers and trips to/from Indonesia, but now extending to anyone booking
+pan-Asian and regional long-haul routes. They currently
 open several booking tabs to compare fares and are unsure which site is actually the best
 deal. They want a confident answer, not more tabs.
 
