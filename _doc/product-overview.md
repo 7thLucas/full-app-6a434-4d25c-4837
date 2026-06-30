@@ -50,9 +50,15 @@ to Indonesia so the answer is sharp.
 - The recommendation logic (how "best" is decided — price weighted with terms/trust) is the
   real intellectual property and the reason a user returns.
 
+## Branding
+
+- **Name:** Terbangin (casual Indonesian — "let's fly"). Confirmed.
+- **Logo:** minimalist upward-soaring paper airplane, flat sky-blue vector mark.
+- **Palette / tone:** clean sky-blue, trustworthy, fast to read; Indonesian travel feel.
+- **Tagline:** "Stop comparing tabs. Get the answer." — one trusted "buy here" pick.
+
 ## Status / TBD
 
-- **Product name:** TBD (to be confirmed in scoping).
-- **Branding (logo, palette, tone):** TBD.
-- **Data source for MVP fares:** to be decided — concrete approach required before build.
+- **Data source for MVP fares:** to be decided — concrete approach required before live
+  fares. MVP will run on sensible sample fare data to prove the end-to-end experience.
 - **Monetization:** not yet defined (likely affiliate/referral on redirect, TBD).
