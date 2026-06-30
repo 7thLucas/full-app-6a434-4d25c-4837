@@ -44,12 +44,31 @@ export const AIRPORTS: Airport[] = [
   { code: "CAN", city: "Guangzhou", name: "Baiyun Intl", country: "China" },
   { code: "HKG", city: "Hong Kong", name: "Hong Kong Intl", country: "Hong Kong" },
   { code: "TPE", city: "Taipei", name: "Taoyuan Intl", country: "Taiwan" },
+  { code: "MFM", city: "Macau", name: "Macau Intl", country: "Macau" },
+  { code: "ULN", city: "Ulaanbaatar", name: "Chinggis Khaan Intl", country: "Mongolia" },
   // ── South Asia ───────────────────────────────────────────────────────────
   { code: "DEL", city: "Delhi", name: "Indira Gandhi Intl", country: "India" },
   { code: "BOM", city: "Mumbai", name: "Chhatrapati Shivaji Intl", country: "India" },
   { code: "BLR", city: "Bengaluru", name: "Kempegowda Intl", country: "India" },
+  { code: "MAA", city: "Chennai", name: "Chennai Intl", country: "India" },
   { code: "CMB", city: "Colombo", name: "Bandaranaike Intl", country: "Sri Lanka" },
   { code: "DAC", city: "Dhaka", name: "Hazrat Shahjalal Intl", country: "Bangladesh" },
+  { code: "KHI", city: "Karachi", name: "Jinnah Intl", country: "Pakistan" },
+  { code: "ISB", city: "Islamabad", name: "Islamabad Intl", country: "Pakistan" },
+  { code: "KTM", city: "Kathmandu", name: "Tribhuvan Intl", country: "Nepal" },
+  { code: "PBH", city: "Paro", name: "Paro Intl", country: "Bhutan" },
+  { code: "MLE", city: "Malé", name: "Velana Intl", country: "Maldives" },
+  // ── Central Asia ─────────────────────────────────────────────────────────
+  { code: "ALA", city: "Almaty", name: "Almaty Intl", country: "Kazakhstan" },
+  { code: "NQZ", city: "Astana", name: "Nursultan Nazarbayev Intl", country: "Kazakhstan" },
+  { code: "TAS", city: "Tashkent", name: "Islam Karimov Tashkent Intl", country: "Uzbekistan" },
+  { code: "FRU", city: "Bishkek", name: "Manas Intl", country: "Kyrgyzstan" },
+  // ── West Asia / Middle East ──────────────────────────────────────────────
+  { code: "RUH", city: "Riyadh", name: "King Khalid Intl", country: "Saudi Arabia" },
+  { code: "JED", city: "Jeddah", name: "King Abdulaziz Intl", country: "Saudi Arabia" },
+  { code: "MCT", city: "Muscat", name: "Muscat Intl", country: "Oman" },
+  { code: "KWI", city: "Kuwait City", name: "Kuwait Intl", country: "Kuwait" },
+  { code: "BAH", city: "Manama", name: "Bahrain Intl", country: "Bahrain" },
   // ── Nearby gateways just outside Asia ────────────────────────────────────
   // Australia
   { code: "SYD", city: "Sydney", name: "Kingsford Smith", country: "Australia" },
@@ -62,6 +81,10 @@ export const AIRPORTS: Airport[] = [
   { code: "AUH", city: "Abu Dhabi", name: "Zayed Intl", country: "United Arab Emirates" },
   // New Zealand
   { code: "AKL", city: "Auckland", name: "Auckland Intl", country: "New Zealand" },
+  { code: "CHC", city: "Christchurch", name: "Christchurch Intl", country: "New Zealand" },
+  // Bridge gateways just outside Asia (Turkey, Egypt)
+  { code: "IST", city: "Istanbul", name: "Istanbul Airport", country: "Turkey" },
+  { code: "CAI", city: "Cairo", name: "Cairo Intl", country: "Egypt" },
 ];
 
 export const AIRPORT_BY_CODE: Record<string, Airport> = Object.fromEntries(
@@ -101,11 +124,31 @@ export const AIRLINES = {
   MU: { code: "MU", name: "China Eastern" },
   // South Asia
   AI: { code: "AI", name: "Air India" },
+  IX: { code: "IX", name: "Air India Express" },
+  "6E": { code: "6E", name: "IndiGo" },
   UL: { code: "UL", name: "SriLankan Airlines" },
+  BG: { code: "BG", name: "Biman Bangladesh Airlines" },
+  PK: { code: "PK", name: "Pakistan Intl Airlines" },
+  RA: { code: "RA", name: "Nepal Airlines" },
+  KB: { code: "KB", name: "Druk Air" },
+  Q2: { code: "Q2", name: "Maldivian" },
+  // East Asia (extra)
+  NX: { code: "NX", name: "Air Macau" },
+  OM: { code: "OM", name: "MIAT Mongolian Airlines" },
+  // Central Asia
+  KC: { code: "KC", name: "Air Astana" },
+  HY: { code: "HY", name: "Uzbekistan Airways" },
   // Gulf / Middle East
   EK: { code: "EK", name: "Emirates" },
   QR: { code: "QR", name: "Qatar Airways" },
   EY: { code: "EY", name: "Etihad Airways" },
+  SV: { code: "SV", name: "Saudia" },
+  WY: { code: "WY", name: "Oman Air" },
+  GF: { code: "GF", name: "Gulf Air" },
+  KU: { code: "KU", name: "Kuwait Airways" },
+  // Bridge gateways
+  TK: { code: "TK", name: "Turkish Airlines" },
+  MS: { code: "MS", name: "EgyptAir" },
   // Oceania
   QF: { code: "QF", name: "Qantas" },
   JQ: { code: "JQ", name: "Jetstar" },
@@ -130,6 +173,9 @@ export const BOOKING_SOURCES = [
   "Emirates.com",
   "Qatarairways.com",
   "Qantas.com",
+  "Turkishairlines.com",
+  "Saudia.com",
+  "Airastana.com",
 ] as const;
 
 export type BookingSource = (typeof BOOKING_SOURCES)[number];
@@ -152,6 +198,9 @@ export const SOURCE_URL: Record<string, string> = {
   "Emirates.com": "https://www.emirates.com/",
   "Qatarairways.com": "https://www.qatarairways.com/",
   "Qantas.com": "https://www.qantas.com/",
+  "Turkishairlines.com": "https://www.turkishairlines.com/",
+  "Saudia.com": "https://www.saudia.com/",
+  "Airastana.com": "https://www.airastana.com/",
 };
 
 // ── Aircraft catalog with realistic onboard amenities ──────────────────────
@@ -238,6 +287,10 @@ export const AIRCRAFT: Record<string, Aircraft> = {
   "A321neo-FS": {
     model: "Airbus A321neo (full service)",
     services: svc({ ife: true, usbPower: true, mealIncluded: true, legroomNote: "Standard 31in" }),
+  },
+  "A320neo-FS": {
+    model: "Airbus A320neo (full service)",
+    services: svc({ ife: true, usbPower: true, mealIncluded: true, legroomNote: "Standard 30in" }),
   },
   "A321neo-LCC": {
     model: "Airbus A321neo",

@@ -1088,6 +1088,482 @@ const ROUTE_SEEDS: RouteSeeds = {
       ],
     },
   ],
+
+  // ───────────────────────────────────────────────────────────────────────
+  // EAST ASIA — Macau & Mongolia
+  // ───────────────────────────────────────────────────────────────────────
+
+  "HKG-MFM": [
+    {
+      source: "Trip.com",
+      priceIdr: 880000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 200,000",
+      legs: [
+        { airline: "NX", flightNumber: "NX691", origin: "HKG", destination: "MFM", departTime: "10:30", arriveTime: "11:05", durationMinutes: 35, aircraft: "A320-LCC" },
+      ],
+    },
+    {
+      source: "Skyscanner",
+      priceIdr: 1190000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 150,000",
+      legs: [
+        { airline: "CX", flightNumber: "CX390", origin: "HKG", destination: "MFM", departTime: "16:45", arriveTime: "17:20", durationMinutes: 35, aircraft: "A321neo-FS" },
+      ],
+    },
+  ],
+
+  "PEK-ULN": [
+    {
+      source: "Trip.com",
+      priceIdr: 3180000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 350,000",
+      legs: [
+        { airline: "OM", flightNumber: "OM224", origin: "PEK", destination: "ULN", departTime: "08:40", arriveTime: "11:35", durationMinutes: 135, aircraft: "B737-MAX8" },
+      ],
+    },
+    {
+      source: "Skyscanner",
+      priceIdr: 3690000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "CA", flightNumber: "CA901", origin: "PEK", destination: "ULN", departTime: "14:10", arriveTime: "17:05", durationMinutes: 135, aircraft: "A320neo-FS" },
+      ],
+    },
+    {
+      // Transit via ICN — alternative routing
+      source: "Agoda",
+      priceIdr: 4180000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 350,000",
+      layoverMinutes: 130,
+      legs: [
+        { airline: "OZ", flightNumber: "OZ332", origin: "PEK", destination: "ICN", departTime: "09:20", arriveTime: "12:30", durationMinutes: 130, aircraft: "A321neo-FS" },
+        { airline: "OZ", flightNumber: "OZ397", origin: "ICN", destination: "ULN", departTime: "14:40", arriveTime: "17:45", durationMinutes: 185, aircraft: "A330-300" },
+      ],
+    },
+  ],
+
+  // ───────────────────────────────────────────────────────────────────────
+  // SOUTH ASIA — India hubs, Pakistan, Nepal, Bhutan, Maldives, Bangladesh
+  // ───────────────────────────────────────────────────────────────────────
+
+  "DEL-KTM": [
+    {
+      source: "Trip.com",
+      priceIdr: 1980000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 250,000",
+      legs: [
+        { airline: "6E", flightNumber: "6E2571", origin: "DEL", destination: "KTM", departTime: "07:30", arriveTime: "10:55", durationMinutes: 105, aircraft: "A320neo-LCC" },
+      ],
+    },
+    {
+      source: "Skyscanner",
+      priceIdr: 2680000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "AI", flightNumber: "AI213", origin: "DEL", destination: "KTM", departTime: "13:20", arriveTime: "16:45", durationMinutes: 105, aircraft: "A320neo-FS" },
+      ],
+    },
+    {
+      source: "Agoda",
+      priceIdr: 2240000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 250,000",
+      legs: [
+        { airline: "RA", flightNumber: "RA206", origin: "DEL", destination: "KTM", departTime: "18:10", arriveTime: "21:35", durationMinutes: 105, aircraft: "A320-LCC" },
+      ],
+    },
+  ],
+
+  "KTM-PBH": [
+    {
+      source: "Skyscanner",
+      priceIdr: 3480000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "KB", flightNumber: "KB401", origin: "KTM", destination: "PBH", departTime: "09:00", arriveTime: "10:00", durationMinutes: 60, aircraft: "A320-LCC" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 3890000,
+      refund: "non-refundable",
+      rescheduleAllowed: false,
+      rescheduleFeeNote: "No reschedule",
+      legs: [
+        { airline: "KB", flightNumber: "KB405", origin: "KTM", destination: "PBH", departTime: "14:30", arriveTime: "15:30", durationMinutes: 60, aircraft: "A320-LCC" },
+      ],
+    },
+  ],
+
+  "CMB-MLE": [
+    {
+      source: "Skyscanner",
+      priceIdr: 2480000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 250,000",
+      legs: [
+        { airline: "UL", flightNumber: "UL103", origin: "CMB", destination: "MLE", departTime: "10:20", arriveTime: "11:30", durationMinutes: 70, aircraft: "A320neo-FS" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 2980000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "Q2", flightNumber: "Q2256", origin: "CMB", destination: "MLE", departTime: "15:40", arriveTime: "16:50", durationMinutes: 70, aircraft: "A320-LCC" },
+      ],
+    },
+  ],
+
+  "DAC-DXB": [
+    {
+      source: "Emirates.com",
+      priceIdr: 5680000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK585", origin: "DAC", destination: "DXB", departTime: "04:25", arriveTime: "08:10", durationMinutes: 325, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 4280000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 450,000",
+      legs: [
+        { airline: "BG", flightNumber: "BG147", origin: "DAC", destination: "DXB", departTime: "09:50", arriveTime: "13:35", durationMinutes: 325, aircraft: "B787-9" },
+      ],
+    },
+    {
+      // Transit via KHI on PIA — cheapest
+      source: "Skyscanner",
+      priceIdr: 3680000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 400,000",
+      layoverMinutes: 120,
+      legs: [
+        { airline: "PK", flightNumber: "PK267", origin: "DAC", destination: "KHI", departTime: "06:00", arriveTime: "09:10", durationMinutes: 250, aircraft: "A320neo-LCC" },
+        { airline: "PK", flightNumber: "PK213", origin: "KHI", destination: "DXB", departTime: "11:10", arriveTime: "12:55", durationMinutes: 105, aircraft: "A320-LCC" },
+      ],
+    },
+  ],
+
+  "DEL-BKK": [
+    {
+      source: "Skyscanner",
+      priceIdr: 3180000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "TG", flightNumber: "TG316", origin: "DEL", destination: "BKK", departTime: "13:30", arriveTime: "19:25", durationMinutes: 265, aircraft: "B787-9" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 2280000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 350,000",
+      legs: [
+        { airline: "6E", flightNumber: "6E97", origin: "DEL", destination: "BKK", departTime: "23:10", arriveTime: "05:05", durationMinutes: 265, aircraft: "A321neo-LCC" },
+      ],
+    },
+  ],
+
+  // ───────────────────────────────────────────────────────────────────────
+  // CENTRAL ASIA — Kazakhstan, Uzbekistan, Kyrgyzstan
+  // ───────────────────────────────────────────────────────────────────────
+
+  "ALA-TAS": [
+    {
+      source: "Airastana.com",
+      priceIdr: 2980000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "KC", flightNumber: "KC131", origin: "ALA", destination: "TAS", departTime: "08:15", arriveTime: "10:05", durationMinutes: 90, aircraft: "A320neo-FS" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 2380000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 300,000",
+      legs: [
+        { airline: "HY", flightNumber: "HY602", origin: "ALA", destination: "TAS", departTime: "15:40", arriveTime: "17:30", durationMinutes: 90, aircraft: "A320-LCC" },
+      ],
+    },
+  ],
+
+  "ALA-DXB": [
+    {
+      source: "Airastana.com",
+      priceIdr: 4680000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "KC", flightNumber: "KC909", origin: "ALA", destination: "DXB", departTime: "07:00", arriveTime: "10:25", durationMinutes: 265, aircraft: "A321neo-FS" },
+      ],
+    },
+    {
+      source: "Emirates.com",
+      priceIdr: 5180000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK2333", origin: "ALA", destination: "DXB", departTime: "16:30", arriveTime: "19:55", durationMinutes: 265, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      // Transit via TAS on Uzbekistan Airways — cheapest
+      source: "Trip.com",
+      priceIdr: 3980000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 400,000",
+      layoverMinutes: 110,
+      legs: [
+        { airline: "HY", flightNumber: "HY601", origin: "ALA", destination: "TAS", departTime: "06:30", arriveTime: "08:20", durationMinutes: 90, aircraft: "A320-LCC" },
+        { airline: "HY", flightNumber: "HY243", origin: "TAS", destination: "DXB", departTime: "10:10", arriveTime: "12:35", durationMinutes: 205, aircraft: "A321neo-FS" },
+      ],
+    },
+  ],
+
+  "TAS-ICN": [
+    {
+      source: "Skyscanner",
+      priceIdr: 5680000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 450,000",
+      legs: [
+        { airline: "HY", flightNumber: "HY531", origin: "TAS", destination: "ICN", departTime: "09:40", arriveTime: "21:55", durationMinutes: 430, aircraft: "B787-9" },
+      ],
+    },
+    {
+      source: "Trip.com",
+      priceIdr: 5180000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 500,000",
+      legs: [
+        { airline: "OZ", flightNumber: "OZ574", origin: "TAS", destination: "ICN", departTime: "23:30", arriveTime: "11:40", durationMinutes: 430, aircraft: "A330-300" },
+      ],
+    },
+  ],
+
+  // ───────────────────────────────────────────────────────────────────────
+  // WEST ASIA / MIDDLE EAST — Saudi Arabia, Oman, Kuwait, Bahrain
+  // ───────────────────────────────────────────────────────────────────────
+
+  "DXB-RUH": [
+    {
+      source: "Emirates.com",
+      priceIdr: 2980000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK817", origin: "DXB", destination: "RUH", departTime: "09:15", arriveTime: "10:45", durationMinutes: 110, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      source: "Saudia.com",
+      priceIdr: 2480000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 250,000",
+      legs: [
+        { airline: "SV", flightNumber: "SV575", origin: "DXB", destination: "RUH", departTime: "14:30", arriveTime: "16:00", durationMinutes: 110, aircraft: "A321neo-FS" },
+      ],
+    },
+    {
+      source: "Skyscanner",
+      priceIdr: 2680000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 250,000",
+      legs: [
+        { airline: "GF", flightNumber: "GF572", origin: "DXB", destination: "RUH", departTime: "19:50", arriveTime: "21:20", durationMinutes: 110, aircraft: "A320neo-FS" },
+      ],
+    },
+  ],
+
+  "JED-DXB": [
+    {
+      source: "Saudia.com",
+      priceIdr: 3980000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "SV", flightNumber: "SV550", origin: "JED", destination: "DXB", departTime: "08:00", arriveTime: "11:50", durationMinutes: 170, aircraft: "B787-9" },
+      ],
+    },
+    {
+      source: "Emirates.com",
+      priceIdr: 4280000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK804", origin: "JED", destination: "DXB", departTime: "15:20", arriveTime: "19:10", durationMinutes: 170, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      // Transit via MCT on Oman Air — cheaper
+      source: "Trip.com",
+      priceIdr: 3480000,
+      refund: "non-refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 400,000",
+      layoverMinutes: 120,
+      legs: [
+        { airline: "WY", flightNumber: "WY672", origin: "JED", destination: "MCT", departTime: "06:30", arriveTime: "11:05", durationMinutes: 155, aircraft: "B737-MAX8" },
+        { airline: "WY", flightNumber: "WY601", origin: "MCT", destination: "DXB", departTime: "13:05", arriveTime: "13:55", durationMinutes: 50, aircraft: "B737-MAX8" },
+      ],
+    },
+  ],
+
+  "CGK-JED": [
+    {
+      source: "Garuda.com",
+      priceIdr: 9850000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "GA", flightNumber: "GA980", origin: "CGK", destination: "JED", departTime: "23:50", arriveTime: "06:30", durationMinutes: 580, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      source: "Saudia.com",
+      priceIdr: 8980000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 600,000",
+      legs: [
+        { airline: "SV", flightNumber: "SV817", origin: "CGK", destination: "JED", departTime: "13:40", arriveTime: "20:20", durationMinutes: 580, aircraft: "B787-9" },
+      ],
+    },
+    {
+      // Transit via DXB on Emirates — cheaper
+      source: "Emirates.com",
+      priceIdr: 7980000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      layoverMinutes: 135,
+      legs: [
+        { airline: "EK", flightNumber: "EK357", origin: "CGK", destination: "DXB", departTime: "00:35", arriveTime: "05:55", durationMinutes: 555, aircraft: "B777-300ER" },
+        { airline: "EK", flightNumber: "EK803", origin: "DXB", destination: "JED", departTime: "08:10", arriveTime: "10:00", durationMinutes: 170, aircraft: "A380-800" },
+      ],
+    },
+  ],
+
+  // ───────────────────────────────────────────────────────────────────────
+  // BRIDGE GATEWAYS — Turkey (Istanbul) & Egypt (Cairo)
+  // ───────────────────────────────────────────────────────────────────────
+
+  "DXB-IST": [
+    {
+      source: "Turkishairlines.com",
+      priceIdr: 5680000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "TK", flightNumber: "TK765", origin: "DXB", destination: "IST", departTime: "09:30", arriveTime: "13:25", durationMinutes: 265, aircraft: "A350-900" },
+      ],
+    },
+    {
+      source: "Emirates.com",
+      priceIdr: 6180000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK121", origin: "DXB", destination: "IST", departTime: "15:10", arriveTime: "19:05", durationMinutes: 265, aircraft: "B777-300ER" },
+      ],
+    },
+  ],
+
+  "SIN-IST": [
+    {
+      source: "Turkishairlines.com",
+      priceIdr: 8980000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "TK", flightNumber: "TK53", origin: "SIN", destination: "IST", departTime: "01:50", arriveTime: "08:30", durationMinutes: 700, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      // Transit via DXB — cheaper than the nonstop
+      source: "Skyscanner",
+      priceIdr: 7480000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 600,000",
+      layoverMinutes: 140,
+      legs: [
+        { airline: "EK", flightNumber: "EK433", origin: "SIN", destination: "DXB", departTime: "02:00", arriveTime: "05:35", durationMinutes: 455, aircraft: "A380-800" },
+        { airline: "EK", flightNumber: "EK121", origin: "DXB", destination: "IST", departTime: "07:55", arriveTime: "11:50", durationMinutes: 265, aircraft: "B777-300ER" },
+      ],
+    },
+  ],
+
+  "DXB-CAI": [
+    {
+      source: "Emirates.com",
+      priceIdr: 4680000,
+      refund: "refundable",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Free reschedule",
+      legs: [
+        { airline: "EK", flightNumber: "EK927", origin: "DXB", destination: "CAI", departTime: "08:40", arriveTime: "11:10", durationMinutes: 230, aircraft: "B777-300ER" },
+      ],
+    },
+    {
+      source: "Skyscanner",
+      priceIdr: 4180000,
+      refund: "partial",
+      rescheduleAllowed: true,
+      rescheduleFeeNote: "Reschedule fee Rp 350,000",
+      legs: [
+        { airline: "MS", flightNumber: "MS913", origin: "DXB", destination: "CAI", departTime: "14:55", arriveTime: "17:25", durationMinutes: 230, aircraft: "B787-9" },
+      ],
+    },
+  ],
 };
 
 /** Public: build all FareOptions for a route key, or [] if unknown. */
