@@ -1,11 +1,11 @@
-# Product Overview — Core Truth
+# Product Overview — Core Truth: Terbangin
 
-> Single source of truth for the product. Some details (name, branding, pricing) are still
+> Single source of truth for the product. Some details (data source, pricing) are still
 > provisional and marked TBD; they will be confirmed during scoping and reconciled here.
 
 ## What it is
 
-A flight **decision engine** for Indonesian travel — a web app that compares fares for the
+**Terbangin** — a flight **decision engine** for Indonesian travel — a web app that compares fares for the
 same route across multiple booking sites and tells the traveler the single best place to
 buy. It is not just a meta-search that lists options and links out; the differentiating
 value is the **recommendation**: "buy this flight on Site X — it's cheaper and the terms are
