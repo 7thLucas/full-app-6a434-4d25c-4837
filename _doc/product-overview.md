@@ -51,8 +51,9 @@ deal. They want a confident answer, not more tabs.
 ## Why it's different
 
 The market has plenty of places to *list* flights. The wedge here is the **best-decision
-recommendation** — turning a wall of options into one trusted "buy here" call, scoped tightly
-to Indonesia so the answer is sharp.
+recommendation** — turning a wall of options into one trusted "buy here" call. With coverage
+now spanning all of Asia and nearby destinations, that single trusted answer applies to far
+more trips while the engine keeps it sharp.
 
 ## Honest constraints (must stay true)
 
