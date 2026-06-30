@@ -64,8 +64,18 @@ to Indonesia so the answer is sharp.
 - **Palette / tone:** clean sky-blue, trustworthy, fast to read; Indonesian travel feel.
 - **Tagline:** "Stop comparing tabs. Get the answer." — one trusted "buy here" pick.
 
+## Current build status
+
+- **MVP is built and live.** The full experience works end-to-end: route search with a
+  direct / transit / both toggle, side-by-side fare comparison across booking sites, each
+  option showing aircraft model + onboard amenities, the single best-decision recommendation
+  (with "why this pick"), transit-savings flagging, and the redirect-to-book step.
+- **Runs on sample fare data**, not a live feed: real Indonesian airports/airlines/aircraft
+  across 8 popular routes, with the data layer built behind a swappable provider seam so a
+  real fare feed can replace it without touching the engine or UI.
+
 ## Status / TBD
 
-- **Data source for MVP fares:** to be decided — concrete approach required before live
-  fares. MVP will run on sensible sample fare data to prove the end-to-end experience.
+- **Data source for live fares:** to be decided — next goal ("Plug in live flight fares").
+  Concrete approach (airline / aggregator API) required before prices are real-time.
 - **Monetization:** not yet defined (likely affiliate/referral on redirect, TBD).
