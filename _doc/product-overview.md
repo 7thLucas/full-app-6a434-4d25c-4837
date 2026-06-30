@@ -1,1 +1,58 @@
-I want to a website. This website's objective is to redirect the user to different sites where they can find plane tickets. What's unique about it, is that it can give recommendations from different sites that allow the user to be able to compare prices. but the web should also be able to find the best decision, (the decision of which site they should use to buy the tickets). so its not that complex, please make it indonesian flights only, so flights from and to indonesia
+# Product Overview — Core Truth
+
+> Single source of truth for the product. Some details (name, branding, pricing) are still
+> provisional and marked TBD; they will be confirmed during scoping and reconciled here.
+
+## What it is
+
+A flight **decision engine** for Indonesian travel — a web app that compares fares for the
+same route across multiple booking sites and tells the traveler the single best place to
+buy. It is not just a meta-search that lists options and links out; the differentiating
+value is the **recommendation**: "buy this flight on Site X — it's cheaper and the terms are
+better." Once the call is made, the app redirects the user to that site to complete the
+purchase.
+
+## The core workflow
+
+1. Traveler enters a route (origin → destination) and date for an Indonesian flight.
+2. The app gathers comparable fares for that route from several booking sources.
+3. The app compares price (and supporting factors such as refund/change terms where
+   available) and ranks the options.
+4. The app surfaces a single **best-decision recommendation** plus the comparison behind it.
+5. The traveler is redirected to the chosen site to book.
+
+## Scope
+
+- **Geography:** Indonesia only — flights departing from and arriving to Indonesia.
+- **Function:** compare + recommend + redirect. The app does not sell or issue tickets
+  itself; purchase happens on the partner booking site.
+- Deliberately narrow scope is a strength: focusing on Indonesian routes makes the
+  comparison sharper and the recommendation more trustworthy.
+
+## Who it's for
+
+Price-sensitive Indonesian travelers (and people flying to/from Indonesia) who currently
+open several booking tabs to compare fares and are unsure which site is actually the best
+deal. They want a confident answer, not more tabs.
+
+## Why it's different
+
+The market has plenty of places to *list* flights. The wedge here is the **best-decision
+recommendation** — turning a wall of options into one trusted "buy here" call, scoped tightly
+to Indonesia so the answer is sharp.
+
+## Honest constraints (must stay true)
+
+- **The product lives or dies on fare data.** Real-time prices come from external data feeds
+  (airline / aggregator APIs) or structured data sources. The interface is the easy part; the
+  honest hard part is where comparable, current fares come from. Scoping must name a concrete
+  data approach for the MVP rather than assume live prices appear for free.
+- The recommendation logic (how "best" is decided — price weighted with terms/trust) is the
+  real intellectual property and the reason a user returns.
+
+## Status / TBD
+
+- **Product name:** TBD (to be confirmed in scoping).
+- **Branding (logo, palette, tone):** TBD.
+- **Data source for MVP fares:** to be decided — concrete approach required before build.
+- **Monetization:** not yet defined (likely affiliate/referral on redirect, TBD).
