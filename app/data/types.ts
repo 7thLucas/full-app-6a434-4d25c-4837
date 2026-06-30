@@ -21,7 +21,7 @@ export interface Airport {
   code: string; // IATA
   city: string;
   name: string;
-  country: string; // "Indonesia" or intl endpoint connected to Indonesia
+  country: string; // e.g. "Indonesia", "Singapore", "Japan", "United Arab Emirates"
 }
 
 export interface Airline {

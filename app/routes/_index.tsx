@@ -12,7 +12,7 @@ export function meta() {
     {
       name: "description",
       content:
-        "A flight decision engine for Indonesia. Compare fares across booking sites and get one trusted 'buy here' recommendation.",
+        "A flight decision engine for Asia and nearby destinations. Compare fares across booking sites and get one trusted 'buy here' recommendation.",
     },
   ];
 }
@@ -55,7 +55,7 @@ export default function IndexPage() {
               <>
                 <img
                   src={heroImage}
-                  alt="Flight over the Indonesian archipelago"
+                  alt="Flight over Asia"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />

@@ -153,15 +153,15 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
   },
   // ── Brand copy ───────────────────────────────────────────────────────
   tagline: "Stop comparing tabs. Get the answer.",
-  heroEyebrow: "Indonesia Flights · Decision Engine",
+  heroEyebrow: "Asia & Nearby Flights · Decision Engine",
   heroHeadlineLine1: "Stop comparing tabs.",
   heroHeadlineLine2: "Get the answer.",
   heroSubtitle:
-    "One trusted “buy here” call for flights to and from Indonesia — we compare the booking sites, you book the best one.",
+    "One trusted “buy here” call for flights across Asia and nearby gateways — we compare the booking sites, you book the best one.",
   heroImageUrl:
-    "https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cinematic%20aerial%20view%20of%20an%20airplane%20wing%20over%20the%20Indonesian%20archipelago%20at%20golden%20hour%2C%20tropical%20islands%20and%20turquoise%20sea%20below%2C%20warm%20premium%20editorial%20photography",
+    "https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cinematic%20aerial%20view%20of%20an%20airplane%20wing%20over%20Asia%20at%20golden%20hour%2C%20tropical%20coastlines%20and%20city%20skylines%20below%2C%20warm%20premium%20editorial%20photography",
   sampleDataNotice:
-    "Demo data. Fares shown are realistic samples for Indonesian routes — not live prices. A real fare feed plugs in later.",
+    "Demo data. Fares shown are realistic samples for routes across Asia and nearby destinations — not live prices. A real fare feed plugs in later.",
   footerNote:
     "Terbangin compares fares and recommends where to buy. It does not sell or issue tickets — you complete the purchase on the partner site.",
   // ── How it works ─────────────────────────────────────────────────────
@@ -171,7 +171,7 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
       icon: "🔎",
       title: "Search your way",
       description:
-        "Enter origin, destination and date for any flight from or to Indonesia — and pick direct, transit, or both.",
+        "Enter origin, destination and date for any flight across Asia or to a nearby gateway — and pick direct, transit, or both.",
     },
     {
       icon: "⚖️",
@@ -195,7 +195,7 @@ export const defaultConfigurablesData: TDefaultConfigurableData = {
   // ── Promise / trust ──────────────────────────────────────────────────
   promiseEyebrow: "The core promise",
   promiseText:
-    "Turn a wall of flight options into one trusted decision — and never wonder if you overpaid on an Indonesian flight again.",
+    "Turn a wall of flight options into one trusted decision — and never wonder if you overpaid on a flight across Asia again.",
   // ── Decision engine ──────────────────────────────────────────────────
   engineWeights: { price: 60, terms: 25, comfort: 15 },
   transitSavingsThreshold: 150000,

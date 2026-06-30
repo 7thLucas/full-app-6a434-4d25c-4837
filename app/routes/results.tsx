@@ -175,8 +175,9 @@ function EmptyState({ from, to }: { from: string; to: string }) {
         No sample fares for {from} → {to} yet
       </h2>
       <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
-        This MVP runs on sample data for popular Indonesian routes. Try one of
-        the popular routes from the home page, or pick a different flight type.
+        This MVP runs on sample data for popular routes across Asia and nearby
+        destinations. Try one of the popular routes from the home page, or pick a
+        different flight type.
       </p>
       <Link
         to="/"
