@@ -78,8 +78,10 @@ more trips while the engine keeps it sharp.
   direct / transit / both toggle, side-by-side fare comparison across booking sites, each
   option showing aircraft model + onboard amenities, the single best-decision recommendation
   (with "why this pick"), transit-savings flagging, and the redirect-to-book step.
-- **Runs on sample fare data**, not a live feed: real Indonesian airports/airlines/aircraft
-  across 8 popular routes, with the data layer built behind a swappable provider seam so a
+- **Runs on sample fare data**, not a live feed: real airports/airlines/aircraft spanning
+  **65 airports across 36 countries** (all of Asia plus nearby gateways like Australia, New
+  Zealand, Istanbul and Cairo) and **43 routes** with a mix of direct and transit options,
+  all behind a swappable provider seam so a
   real fare feed can replace it without touching the engine or UI.
 
 ## Status / TBD
