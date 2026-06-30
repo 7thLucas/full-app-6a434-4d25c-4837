@@ -53,8 +53,9 @@ to Indonesia so the answer is sharp.
   (airline / aggregator APIs) or structured data sources. The interface is the easy part; the
   honest hard part is where comparable, current fares come from. Scoping must name a concrete
   data approach for the MVP rather than assume live prices appear for free.
-- The recommendation logic (how "best" is decided — price weighted with terms/trust) is the
-  real intellectual property and the reason a user returns.
+- The recommendation logic (how "best" is decided — price weighted with refund/change terms
+  and comfort, plus transit-savings detection) is the real intellectual property and the
+  reason a user returns. "Best" deliberately is not always "cheapest."
 
 ## Branding
 
