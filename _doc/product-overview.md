@@ -30,12 +30,15 @@ purchase.
 
 ## Scope
 
-- **Geography:** Indonesia only — flights departing from and arriving to Indonesia.
+- **Geography:** all of Asia — Southeast, East, South, Central, and West Asia (Middle East) —
+  plus nearby destinations just outside the region (Australia, New Zealand, and bridge
+  gateways such as Istanbul and Cairo). Indonesia remains the home market and brand anchor.
 - **Function:** compare + recommend + redirect, across both direct and transit flights (user
   picks the type). The app does not sell or issue tickets itself; purchase happens on the
   partner booking site.
-- Deliberately narrow scope is a strength: focusing on Indonesian routes makes the
-  comparison sharper and the recommendation more trustworthy.
+- The real strength is the **decision engine**, not a narrow map: broad pan-Asian coverage
+  makes Terbangin useful for far more trips, while the single trusted recommendation keeps
+  the answer sharp no matter how wide the route options get.
 
 ## Who it's for
 
