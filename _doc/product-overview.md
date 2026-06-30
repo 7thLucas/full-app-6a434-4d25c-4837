@@ -27,8 +27,9 @@ purchase.
 ## Scope
 
 - **Geography:** Indonesia only — flights departing from and arriving to Indonesia.
-- **Function:** compare + recommend + redirect. The app does not sell or issue tickets
-  itself; purchase happens on the partner booking site.
+- **Function:** compare + recommend + redirect, across both direct and transit flights (user
+  picks the type). The app does not sell or issue tickets itself; purchase happens on the
+  partner booking site.
 - Deliberately narrow scope is a strength: focusing on Indonesian routes makes the
   comparison sharper and the recommendation more trustworthy.
 
