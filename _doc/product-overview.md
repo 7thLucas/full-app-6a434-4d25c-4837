@@ -14,10 +14,13 @@ purchase.
 
 ## The core workflow
 
-1. Traveler enters a route (origin → destination) and date for an Indonesian flight.
-2. The app gathers comparable fares for that route from several booking sources.
-3. The app compares price (and supporting factors such as refund/change terms where
-   available) and ranks the options.
+1. Traveler enters a route (origin → destination) and date for an Indonesian flight, and
+   chooses a **flight type — direct, transit (connecting), or both**.
+2. The app gathers comparable fares for that route from several booking sources, including
+   transit (connecting) itineraries, which are often cheaper than direct flights.
+3. The app compares price (and supporting factors such as refund/change terms and direct vs.
+   transit where available) and ranks the options, flagging when a transit option saves real
+   money over flying direct.
 4. The app surfaces a single **best-decision recommendation** plus the comparison behind it.
 5. The traveler is redirected to the chosen site to book.
 
